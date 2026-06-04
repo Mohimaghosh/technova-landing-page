@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Header */
+.hero {
+  background: #0f172a;
+  color: white;
+  padding: 20px 8%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* Hero Content */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.hero-text button {
+  padding: 12px 25px;
+  border: none;
+  background: #38bdf8;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background: #0284c7;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Features */
+.features {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-box {
+  background: #f1f5f9;
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonials */
+.testimonials {
+  background: #e2e8f0;
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.testimonial-box {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+/* Footer */
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .feature-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
